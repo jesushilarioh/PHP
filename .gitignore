@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/osx,linux,macos,windows
+# Created by https://www.gitignore.io/api/osx,linux,macos,windows,visualstudiocode
 
 ### Linux ###
 *~
@@ -53,6 +53,14 @@ Temporary Items
 
 # Directories potentially created on remote AFP share
 
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -75,4 +83,4 @@ $RECYCLE.BIN/
 *.lnk
 
 
-# End of https://www.gitignore.io/api/osx,linux,macos,windows
+# End of https://www.gitignore.io/api/osx,linux,macos,windows,visualstudiocode
