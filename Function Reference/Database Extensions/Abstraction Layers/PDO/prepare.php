@@ -28,4 +28,17 @@
         ':colour' => 'yellow'
     ));
     $yellow = $statement -> fetchAll();
+
+
+    // Example #2: Prepare an SQL statement with question mark parameters
+    // Example #2: Prepare an SQL statement with question mark parameters
+    // Example #2: Prepare an SQL statement with question mark parameters
+    $statement = $connection -> prepare("SELECT name, colour, calories
+        FROM fruit
+        WHERE calories < ? AND colour = ?");
+
+    $statement -> execute(array(150, "red"));
+    $red = $statement -> fetchAll();
+    $statement -> execute(array(175, "yellow"));
+    $yellow = $statement -> fetchAll();
 ?>
